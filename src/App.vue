@@ -8,10 +8,10 @@
   <!--</div>-->
 <!--</template>-->
 <template>
-  <v-app :dark="goDark">
-    <v-content>
+  <v-app>
+    <v-main>
       <v-container align-center>
-        <TheHeader :goDark="goDark" @changeTheme="updateTheme($event)"/>
+        <TheHeader/>
 
         <transition
           name="router-animation"
@@ -22,12 +22,26 @@
           <router-view></router-view>
         </transition>
       </v-container>
-    </v-content>
-    <TheFooter/>
+    </v-main>
+    <!-- <TheFooter/> -->
   </v-app>
 </template>
 
+<script>
+import TheHeader from './components/TheHeader.vue'
 
+export default {
+  name: 'App',
+  components: {
+    TheHeader,
+  },
+  data() {
+    return {
+      drawer: null,
+    }
+  }
+}
+</script>
 <style lang="scss">
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
 #app {
