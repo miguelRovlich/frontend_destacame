@@ -1,6 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/HomeTest.vue";
+import About from "./views/AboutView.vue";
+import Resume from "./views/ResumeView.vue";
 
 Vue.use(Router);
 
@@ -11,5 +13,16 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
-  }]
+  },
+  {
+    path: "/resume",
+    name: "resume",
+    component: Resume
+  },
+  {
+    path: "/about",
+    name: "about",
+    component: About
+},
+]
 });

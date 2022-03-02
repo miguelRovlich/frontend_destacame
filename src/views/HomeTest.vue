@@ -3,7 +3,7 @@
     <VueCompareImage
       class="hidden-md-and-down"
       hover
-      :style="{ minWidth: '1300px' }"
+      :style="{ minWidth: '600px' }"
       :sliderLineWidth="sliderLine"
       :handleSize="hSize"
       :leftImage="leftImage"
@@ -32,34 +32,41 @@
       :pre-type-delay="70"
       :type-delay="70"
       :pre-erase-delay="1980"
-      :erase-delay="150"
+      :erase-delay="100"
       erase-style="select-back"
       :erase-on-complete="false"
       caret-animation="smooth"
     />
     <br>
     <v-flex xs12 sm6 md4 lg4 xl4>
-      <v-card flat color="transparent" max-width="500">
+      <v-card flat color="transparent" max-width="520">
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">
-              <span>About</span>
-              <span class="green--text">Me</span>
-            </h3>
+            <h2 class="headline mb-0">
+              <span>Sobre </span>
+              <span class="green--text">Mi</span>
+            </h2>
+            <!-- espacio -->
+            <br>
             <div>
+              <h3>Hola! Encantado de conocerte.</h3>
               <p>
-                Hello! I'm Miguel Rovlich. I'm a front-end developer who
-                is passionate about
+                Desarrollador Full Stack
                 <span
                   class="green--text font-weight-bold"
-                >VUE</span>, building great user experiences,
-                fighting for simplicity over complexity and constantly learning.
+                >VUE.JS</span>
+              </p>
+              <p>
+                Me considero una persona muy creativa, con una gran
+                capacidad de trabajo en equipo, con una gran capacidad de
+                comunicación y una gran capacidad de adaptación a los
+                cambios.
               </p>
             </div>
           </div>
         </v-card-title>
 
-        <v-card-actions class="hidden-sm-and-down">
+        <v-card-actions class="hidden-sm-and-down justify-center">
           <v-btn
             v-for="icon in icons"
             :key="icon.icon"
@@ -106,25 +113,25 @@ export default {
   data() {
     return {
       icons: [
-        { href: "https://github.com/EldinZaimovic", icon: "fab fa-github" },
+        { href: "https://github.com/miguelRovlich", icon: "fab fa-github" },
         {
-          href: "https://www.linkedin.com/in/eldin-zaimovic",
+          href: "https://www.linkedin.com/in/miguelrovlich",
           icon: "fab fa-linkedin-in"
         },
         {
-          href: "https://www.facebook.com/EldinVasVoli",
+          href: "https://www.facebook.com/ezalortop",
           icon: "fab fa-facebook-f"
         },
-        { href: "https://www.instagram.com/matricar", icon: "fab fa-instagram" }
+        { href: "https://www.instagram.com/zivot_i_moc", icon: "fab fa-instagram" }
       ],
-      text1: ["Front-End Developer", "Web Developer"],
-      leftImage: "https://i.imgur.com/bU50uS9.jpg",
-      rightImage: "https://i.imgur.com/z3ZoEEw.jpg",
-      leftImage2: "https://i.imgur.com/SXBitjh.jpg",
-      rightImage2: "https://i.imgur.com/Dcz2PGx.jpg",
-      sliderLine: 0,
-      hSize: 0,
-      sliderPosition: 0.5
+      text1: ["Front-End Developer", "Web Developer","Back-End Developer","Full-Stack Developer"],
+      leftImage: require("../assets/blanco-negro.jpg"),
+      rightImage: require("../assets/color.jpg"),
+      leftImage2: require("../assets/blanco-negro.jpg"),
+      rightImage2: require("../assets/color.jpg"),
+      sliderLine: 1,
+      hSize: 20,
+      sliderPosition: 2.5
     };
   }
 };
