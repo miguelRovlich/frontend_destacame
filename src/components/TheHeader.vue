@@ -17,6 +17,11 @@
             <v-list-tile-title>ABOUT</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile active-class="green--text" to="/contact">
+          <v-list-tile-content>
+            <v-list-tile-title>CONTACT</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
         <v-toolbar flat dense color="transparent">
@@ -29,6 +34,7 @@
             <v-btn text to="/" active-class="green--text headline">Home</v-btn>
             <v-btn text to="/resume" active-class="green--text headline">Resume</v-btn>
             <v-btn text to="/about" active-class="green--text headline">About</v-btn>
+            <v-btn text to="/contact" active-class="green--text headline">Contact</v-btn>
             </v-toolbar-items>
         </v-toolbar>
     </div>

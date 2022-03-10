@@ -4,7 +4,7 @@
     :dense="$vuetify.breakpoint.smAndDown"
   >
     <v-timeline-item
-      v-for="(item, i) in items"
+      v-for="(item, i) in laboralData"
       :key="i"
       :color="item.color"
       :icon="item.icon"
@@ -15,16 +15,19 @@
         dark
       >
         <v-card-title class="text-h6">
-          Lorem Ipsum Dolor
+          {{item.title}}
         </v-card-title>
         <v-card-text class="white text--primary">
-          <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
+          <h3>{{item.subtitle}}</h3>
+          <br>
+          <p>{{item.description}}</p>
           <v-btn
             :color="item.color"
             class="mx-0"
             outlined
+            href="https://vinken.cl/vinken/#nosotros"
           >
-            Button
+            Ir a la pagina
           </v-btn>
         </v-card-text>
       </v-card>
@@ -34,22 +37,38 @@
 <script>
   export default {
     data: () => ({
-      items: [
+      laboralData: [
         {
           color: 'red lighten-2',
           icon: 'mdi-star',
+          title: "2021 Vinken Solar S.p.A.",
+          subtitle: "Desarrollador Full Stack",
+          description: "Diseñar y desarrollar un sistema de monitoreo para parques solares, graficar series de tiempo e indicadores claves de rendimiento, refactorizar componentes e implementar metodologias agiles dentro del equipo de investigación y desarrollo.",
+          link:'https://vinken.cl/vinken/#nosotros'
         },
         {
           color: 'purple darken-1',
           icon: 'mdi-book-variant',
+          title: "2021 Vinken Solar S.p.A.",
+          subtitle: "Desarrollador Full Stack",
+          description: "Diseñar y desarrollar un sistema de monitoreo para parques solares, graficar series de tiempo e indicadores claves de rendimiento, refactorizar componentes e implementar metodologias agiles dentro del equipo de investigación y desarrollo.",
+          link:'https://vinken.cl/vinken/#nosotros'
         },
         {
+          title: "2021 Vinken Solar S.p.A.",
+          subtitle: "Desarrollador Full Stack",
+          description: "Diseñar y desarrollar un sistema de monitoreo para parques solares, graficar series de tiempo e indicadores claves de rendimiento, refactorizar componentes e implementar metodologias agiles dentro del equipo de investigación y desarrollo.",
           color: 'green lighten-1',
           icon: 'mdi-airballoon',
+          link:'https://vinken.cl/vinken/#nosotros'
         },
         {
+          title: "2021 Vinken Solar S.p.A.",
+          subtitle: "Desarrollador Full Stack",
+          description: "Diseñar y desarrollar un sistema de monitoreo para parques solares, graficar series de tiempo e indicadores claves de rendimiento, refactorizar componentes e implementar metodologias agiles dentro del equipo de investigación y desarrollo.",
           color: 'indigo',
           icon: 'mdi-buffer',
+          link:'https://vinken.cl/vinken/#nosotros'
         },
       ],
     }),
