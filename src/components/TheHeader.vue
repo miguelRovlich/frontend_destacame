@@ -26,8 +26,8 @@
     </v-navigation-drawer>
         <v-toolbar flat dense color="transparent">
             <v-toolbar-title>
-            <span>Miguel</span>
-            <span>Rovlich</span>
+            <span class="font-weight-light">Miguel</span>
+            <span class="green--text">Rovlich</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">

@@ -41,7 +41,7 @@
         {
           color: 'red lighten-2',
           icon: 'mdi-star',
-          title: "2021 Vinken Solar S.p.A.",
+          title: "2021 - Actualidad Vinken Solar S.p.A.",
           subtitle: "Desarrollador Full Stack",
           description: "Diseñar y desarrollar un sistema de monitoreo para parques solares, graficar series de tiempo e indicadores claves de rendimiento, refactorizar componentes e implementar metodologias agiles dentro del equipo de investigación y desarrollo.",
           link:'https://vinken.cl/vinken/#nosotros'
@@ -49,9 +49,9 @@
         {
           color: 'purple darken-1',
           icon: 'mdi-book-variant',
-          title: "2021 Vinken Solar S.p.A.",
-          subtitle: "Desarrollador Full Stack",
-          description: "Diseñar y desarrollar un sistema de monitoreo para parques solares, graficar series de tiempo e indicadores claves de rendimiento, refactorizar componentes e implementar metodologias agiles dentro del equipo de investigación y desarrollo.",
+          title: "2021 Matchbook.cl",
+          subtitle: "Desarrollador backend",
+          description: "Diseñar y desarrollar la API de Matchbook.cl.",
           link:'https://vinken.cl/vinken/#nosotros'
         },
         {
