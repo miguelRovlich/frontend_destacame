@@ -31,8 +31,9 @@
     <v-btn
       class="mr-4"
       @click="submit"
+      color="green"
     >
-      Send
+      Send message
     </v-btn>
     <v-btn @click="clear">
       Clear

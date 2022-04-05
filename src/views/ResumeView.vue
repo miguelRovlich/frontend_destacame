@@ -1,5 +1,6 @@
 <template>
     <TimeLine />
+    
 </template>
 <script>
 import TimeLine from '../components/TimeLine.vue'	 
