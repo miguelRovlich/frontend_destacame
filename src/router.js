@@ -1,10 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/HomeTest.vue";
-import About from "./views/AboutView.vue";
-import Resume from "./views/ResumeView.vue";
-import Contact from "./views/ContactView.vue";
-
+import Pasajeros from "./views/PasajerosView.vue";
+import Buses from "./views/BusesView.vue";
+import Trayectos from "./views/TrayectosView.vue";
+import Choferes from "./views/ChoferesView.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -16,19 +16,26 @@ export default new Router({
       component: Home
   },
   {
-    path: "/resume",
-    name: "resume",
-    component: Resume
+    path: "/pasajeros",
+    name: "pasajeros",
+    component: Pasajeros
+  },
+
+  {
+    path: "/buses",
+    name: "buses",
+    component: Buses
+  },
+  
+  {
+    path: "/trayectos",
+    name: "trayectos",
+    component: Trayectos
   },
   {
-    path: "/about",
-    name: "about",
-    component: About
-  },
-  {
-    path: "/contact",
-    name: "contact",
-    component: Contact
-  },
+    path: "/choferes",
+    name: "choferes",
+    component: Choferes
+  },  
 ]
 });

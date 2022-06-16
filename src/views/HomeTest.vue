@@ -3,7 +3,7 @@
     <VueCompareImage
       class="hidden-md-and-down"
       hover
-      :style="{ minWidth: '800px', maxWidth: '600px', minHeight: '800px', maxHeight: '800px' }"
+      :style="{ minWidth: '800px', maxWidth: '1200px', minHeight: '800px', maxHeight: '1500px' }"
       :sliderLineWidth="sliderLine"
       :handleSize="hSize"
       :leftImage="leftImage"
@@ -23,7 +23,7 @@
 
     <br>
 
-    <vue-typer class="headline" :repeat="0" text="Miguel Rovlich" />
+    <vue-typer class="headline" :repeat="0" text="Bus Tur, primera en retrasos" />
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -42,25 +42,18 @@
       <v-card flat color="transparent" max-width="520">
         <v-card-title primary-title>
           <div>
-            <h2 class="headline mb-0">
-              <span>Sobre </span>
-              <span class="green--text">Mi</span>
-            </h2>
             <!-- espacio -->
             <br>
             <div>
               <h3>Hola! Encantado de conocerte.</h3>
               <p>
-                Desarrollador Full Stack
+                Somos una empresa que se encarga de transportar pasajeros de una ciudad a otra hace mas de
                 <span
                   class="green--text font-weight-bold"
-                >VUE.JS</span>
+                >70 años </span>
               </p>
               <p>
-                Me considero una persona muy creativa, con una gran
-                capacidad de trabajo en equipo, con una gran capacidad de
-                comunicación y una gran capacidad de adaptación a los
-                cambios.
+                Si buscas llegar tarde, que cancelen el bus en el que vas sin previo aviso y que no te compensen en lo absoluto entonces deberias viajar con nosotros.
               </p>
             </div>
           </div>
@@ -115,22 +108,22 @@ export default {
       icons: [
         { href: "https://github.com/miguelRovlich", icon: "fab fa-github" },
         {
-          href: "https://www.linkedin.com/in/miguelrovlich",
+          href: "https://www.linkedin.com/in/bustur",
           icon: "fab fa-linkedin-in"
         },
         {
-          href: "https://www.facebook.com/ezalortop",
+          href: "https://www.facebook.com/bustur",
           icon: "fab fa-facebook-f"
         },
-        { href: "https://www.instagram.com/zivot_i_moc", icon: "fab fa-instagram" }
+        { href: "https://www.instagram.com/bustur", icon: "fab fa-instagram" }
       ],
-      text1: ["Front-End Developer", "Web Developer","Back-End Developer","Full-Stack Developer"],
-      leftImage: require("../assets/blanco-negro.jpg"),
-      rightImage: require("../assets/color.jpg"),
-      leftImage2: require("../assets/blanco-negro.jpg"),
-      rightImage2: require("../assets/color.jpg"),
+      text1: ["Perdidas de equipaje","Buses cancelados sin previo aviso","Retrasos injustificados","Buses sin cargador USB"],
+      leftImage: require("../assets/descarga (1).jpg"),
+      rightImage: require("../assets/descarga (2).jpg"),
+      leftImage2: require("../assets/descarga (1).jpg"),
+      rightImage2: require("../assets/descarga (2).jpg"),
       sliderLine: 1,
-      hSize: 20,
+      hSize: 12,
       sliderPosition: 2.5
     };
   }

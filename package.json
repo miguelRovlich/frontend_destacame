@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "prueba_destacame",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "apexcharts": "^3.33.2",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-apexcharts": "^1.6.2",
@@ -45,7 +46,14 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/valid-v-slot": [
+        "error",
+        {
+          "allowModifiers": true
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
